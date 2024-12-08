@@ -67,18 +67,20 @@ You can install these dependencies using:
 - The function show_video checks if a video file exists in the specified path and notifies the user of its location.
 
 # Running the Project
-Clone the repository:
 
-git clone https://github.com/yourusername/your-repository.git
+1. Clone the repository:
 
-Navigate to the project directory:
+- `git clone https://github.com/yourusername/your-repository.git`
 
-Install the dependencies into your virtual environment:
+2. Navigate to the project directory.
 
-pip install -r requirements.txt
-Run the main script to start training:
+3. Install the dependencies into your virtual environment:
 
-python lunar_landing.py
+- `pip install -r requirements.txt`
+  
+4. Run the main script to start training:
+
+- `python lunar_landing.py`
 
 # Results
 - The training loop prints the average score every 100 episodes. The environment is considered solved when the agent achieves an average score of 300 over 100 consecutive episodes. The trained model's weights are saved as checkpoint.pth.
