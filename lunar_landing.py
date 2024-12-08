@@ -90,7 +90,7 @@ class Agent:
             target_param.data.copy_(tau * local_param.data + (1.0 - tau) * target_param.data)
 
 env = gym.make('LunarLander-v3', render_mode='rgb_array')
-env = RecordVideo(env, './video', episode_trigger=lambda episode_id: episode_id % 50 == 0)
+env = RecordVideo(env, './video', episode_trigger=lambda episode_id: episode_id % 100 == 0)
 state_size = env.observation_space.shape[0]
 action_size = env.action_space.n
 agent = Agent(state_size, action_size)
