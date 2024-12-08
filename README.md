@@ -17,7 +17,8 @@ You can install these dependencies using:
 
 # Project Structure
 
-## lunar_landing.py: The main code file that contains the implementation of the RL agent and the training loop.
+## lunar_landing.py: 
+- The main code file that contains the implementation of the RL agent and the training loop.
 
 ## video/:
 - Directory where the recorded videos of the agent's performance are saved.
@@ -33,21 +34,28 @@ You can install these dependencies using:
 ## Agent Class
 - The Agent class encapsulates the behavior of the RL agent. Key components include:
 
-## Networks: Local and target Q-networks.
+## Networks:
+- Local and target Q-networks.
 
-## Optimizer: Adam optimizer for updating the local network.
+## Optimizer: 
+- Adam optimizer for updating the local network.
 
-## Memory: Replay memory to store experiences.
+## Memory: 
+- Replay memory to store experiences.
 
 # Methods:
 
-## step(): Saves experience and triggers learning periodically.
+## step():
+- Saves experience and triggers learning periodically.
 
-## act(): Chooses an action based on the current policy with epsilon-greedy exploration.
+## act():
+- Chooses an action based on the current policy with epsilon-greedy exploration.
 
-## learn(): Updates the network using experiences from replay memory.
+## learn(): 
+- Updates the network using experiences from replay memory.
 
-## soft_update(): Softly updates the target network to gradually match the local network.
+## soft_update():
+- Softly updates the target network to gradually match the local network.
 
 ## Training the Agent
 - The function train_agent trains the agent over a specified number of episodes. It initializes the environment, runs episodes, and adjusts epsilon for exploration-exploitation trade-off.
@@ -62,10 +70,10 @@ You can install these dependencies using:
 Clone the repository:
 
 git clone https://github.com/yourusername/your-repository.git
+
 Navigate to the project directory:
 
-cd your-repository
-Install the dependencies:
+Install the dependencies into your virtual environment:
 
 pip install -r requirements.txt
 Run the main script to start training:
